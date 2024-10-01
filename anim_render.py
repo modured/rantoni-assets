@@ -1,17 +1,32 @@
+from math import pi, sqrt
+
 import bpy
 
 
 print("\n\n---> Attempting to render animations...")
 
+Z_HEIGHT = 8
+X_DISTANCE = 10
+X_ANGLE = 0.95
+SQRT_2 = sqrt(2)
+
 camera_positions_rotations = [
     # Top
-    ((0, 10, 8), (0.95, 0, 3.1415)),
+    ((0, X_DISTANCE, Z_HEIGHT), (X_ANGLE, 0, pi)),
+    # Top Right
+    ((-X_DISTANCE / SQRT_2, X_DISTANCE / SQRT_2, Z_HEIGHT), (X_ANGLE, 0, 5 / 4 * pi)),
     # Right
-    ((-10, 0, 8), (0.95, 0, -1.57)),
+    ((-X_DISTANCE, 0, Z_HEIGHT), (X_ANGLE, 0, - pi / 2)),
+    # Bottom Right
+    ((-X_DISTANCE / SQRT_2, -X_DISTANCE / SQRT_2, Z_HEIGHT), (X_ANGLE, 0, - 1 / 4 * pi)),
     # Bottom
-    ((0, -10, 8), (0.95, 0, 0)),
+    ((0, -X_DISTANCE, Z_HEIGHT), (X_ANGLE, 0, 0)),
+    # Bottom Left
+    ((X_DISTANCE / SQRT_2, -X_DISTANCE / SQRT_2, Z_HEIGHT), (X_ANGLE, 0, 1 / 4 * pi)),
     # Left
-    ((10, 0, 8), (0.95, 0, 1.57)),
+    ((X_DISTANCE, 0, Z_HEIGHT), (X_ANGLE, 0, pi / 2)),
+    # Top Left
+    ((X_DISTANCE / SQRT_2, X_DISTANCE / SQRT_2, Z_HEIGHT), (X_ANGLE, 0, -5 / 4 * pi)),
 ]
 
 camera = bpy.data.objects["Camera"]
