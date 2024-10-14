@@ -1,9 +1,8 @@
 from math import pi, sqrt
+from shutil import rmtree
+from os.path import isdir
 
 import bpy
-
-
-print("\n\n---> Attempting to render animations...")
 
 Z_HEIGHT = 8
 X_DISTANCE = 10
@@ -12,6 +11,17 @@ SQRT_2 = sqrt(2)
 
 CAMERA_STRING_NAME = "Camera"
 CHARACTER_RIG_NAME = "rig"
+RENDER_OUTPUT_DIR = "render"
+
+
+print("\n\n---> Attempting to remove render output dir...")
+
+
+if isdir(RENDER_OUTPUT_DIR):
+    rmtree(RENDER_OUTPUT_DIR)
+
+
+print("\n\n---> Attempting to render animations...")
 
 camera_positions_rotations = [
     # Top
@@ -55,5 +65,5 @@ for action in bpy.data.actions:
         camera.location = position
         camera.rotation_euler = rotation
 
-        bpy.context.scene.render.filepath = f"render/{action.name}-o{orientation}-"
+        bpy.context.scene.render.filepath = f"{RENDER_OUTPUT_DIR}/{action.name}-o{orientation}-"
         bpy.ops.render.render(animation=True)
