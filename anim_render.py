@@ -4,7 +4,7 @@ from os.path import isdir
 
 import bpy
 
-Z_HEIGHT = 8
+Z_HEIGHT = 9.5
 X_DISTANCE = 10
 X_ANGLE = 0.95
 SQRT_2 = sqrt(2)
