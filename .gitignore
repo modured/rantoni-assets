@@ -1,7 +1,6 @@
 *.blend1*
 *.mp4
 *.mkv
-*.png
 *.webm
 *.jpg
 render/*
