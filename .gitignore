@@ -4,5 +4,6 @@
 *.webm
 *.jpg
 render/*
+metadata.csv
 **/*/target
 **/*/out

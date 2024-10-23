@@ -12,6 +12,7 @@ SQRT_2 = sqrt(2)
 CAMERA_STRING_NAME = "Camera"
 CHARACTER_RIG_NAME = "rig"
 RENDER_OUTPUT_DIR = "render"
+METADATA_OUTPUT_DIR = "metadata.csv"
 
 
 print("\n\n---> Attempting to remove render output dir...")
@@ -50,10 +51,14 @@ rig = bpy.data.objects[CHARACTER_RIG_NAME]
 if rig is None:
     raise ValueError("Expected to find rig with name 'rig' but none is present in scene.")
 
+metadata = []
 
 for action in bpy.data.actions:
     print(f"\n\n---> Rendering {action.name} now...")
     rig.animation_data.action = bpy.data.actions.get(action.name)
+
+    for marker in action.pose_markers:
+        metadata.append(f"{action.name},{marker.name},{marker.frame}\n")
 
     bpy.context.scene.frame_start = int(action.frame_start)
     bpy.context.scene.frame_end = int(action.frame_end)
@@ -67,3 +72,6 @@ for action in bpy.data.actions:
 
         bpy.context.scene.render.filepath = f"{RENDER_OUTPUT_DIR}/{action.name}-o{orientation}-"
         bpy.ops.render.render(animation=True)
+
+with open(METADATA_OUTPUT_DIR, "w") as f:
+    f.writelines(metadata)
