@@ -13,3 +13,11 @@ Everything regarding the game Rantoni that doesn't directly have to do with the 
     - Animation statemachine
 - Wizards of Legends
     - Animations
+
+## Marketing
+
+Just some rough plans for what you can do for marketing. Will probably not be able to do everything.
+
+- Send out steam keys to streamers/youtubers and ask them to play the game
+- Youtube Videos (game dev logs) about the game
+- Lost Oppai Game Dev with Rantoni mention at the end (probably kinda cheeky, but oh well)
