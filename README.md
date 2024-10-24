@@ -2,6 +2,18 @@
 
 Everything regarding the game Rantoni that doesn't directly have to do with the game is in here. It's more like a dirty repo where I don't exactly try to keep a super clean history or small git dir size.
 
+## Gameplay
+
+### Attacks
+
+Bro, hear me out. Holding down light/heavy attack will trigger a "charged version", for the light attack it will be a continous stream of strikes that start slow and get faster and faster (like a gatling gun), the player is moving forward while doing this, similar to the one attack from wizards of legends with the ice melee attack. The heavy attack charges until a max is hit, when the player releases the character first stomps on the ground real hard, sending all his enemies around him to get fling into the air (though no knockback, just up), then the player jumps up and performs a sick ass all round house heel kick, sending all the enemies into oblivion.
+
+I think this would also make for a great trailer ending.
+
+KILL. THEM. ALL. Then baaam, the hit of the heavy attack or the light attack getting faster and faster with each word.
+LEAVE. NO. SURVIVORS.
+EVERYBODY. MUST. DIE
+
 ## Game References
 
 - Redeemer
@@ -14,11 +26,22 @@ Everything regarding the game Rantoni that doesn't directly have to do with the 
 - Wizards of Legends
     - Animations
 
+## Expenses
+
+- Steam Capsule art
+    - Really don't want to spend more than 500 bucks on this
+    - Don't be too cheap with this, also we can't really do this later, better to get it right the first time
+- Music
+    - Bro if I can get noisecream to work on this... dude
+    - Though I really, REALLY don't want to spend more then 500 bucks on this, preferable is something like 300 but I doubt that will work
+    - Though this can also be budgeted like max 500 at first and then, if there are more whishlists than expected, you can take a bit more cash in the hand and get some more songs, this way you have somewhat of a dynamic budget and don't overhire as badly
+
 ## Marketing
 
 ### Specific unique marketing
 
 - Reach out to Ranton, tell him about the game and also ask if he wants to be part, as for example a story writer (also partially marketing in terms of videos or similar content creation)
+- Regardless of whether or not Ranton will actually agree to join, we can definitely do some posts on his subreddit as the game was inspired by him
 - Events or leaderboard stuff on discord or some similar form of competition (probably not because it's too much work)
 
 ### General Stuff
