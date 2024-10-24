@@ -107,12 +107,15 @@ fn animation_format(
         .next()
         .expect("Failed to get stem name of animation, unexpected format");
     if let Some(events) = metadata.get(key) {
-        events_str += "\t\tevents: {\n";
+        events_str += "\n\t\tevents: {\n";
 
         for (event, frame) in events {
             events_str += &format!("\t\t\t{}: ", frame);
             events_str += "{\n";
-            events_str += &format!("\t\t\t\t\"events::{}\": (\n", event.to_string());
+            events_str += &format!(
+                "\t\t\t\t\"rantoni::assets::events::{}\": (\n",
+                event.to_string()
+            );
 
             match event {
                 AnimationEvents::HitboxStart => {
@@ -130,8 +133,7 @@ fn animation_format(
     format!(
         "\t\"{animation}\": (
 \t\tkeyframes: KeyframesRange((start: {start_index}, end: {end_index})),
-\t\tduration: {duration},
-{events_str}
+\t\tduration: {duration},{events_str}
 \t),
 "
     )
