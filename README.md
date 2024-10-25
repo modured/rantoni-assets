@@ -14,6 +14,16 @@ KILL. THEM. ALL. Then baaam, the hit of the heavy attack or the light attack get
 LEAVE. NO. SURVIVORS.
 EVERYBODY. MUST. DIE
 
+### Playtesting, QA
+
+Testing niddy griddy like player stats (movement speed, attack speed bla bla bla) can be easily done by having a txt file or ron file and letting the testers just adjust those values and then hot reload the game state to reflect the changes.
+
+Also allows for easily copy/pasting configs.
+
+### Juice
+
+- Destructable objects, sending enemies through walls is so much fun in Redeemer, should have that too
+
 ## Game References
 
 - Redeemer
