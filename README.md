@@ -24,6 +24,10 @@ Also allows for easily copy/pasting configs.
 
 - Destructable objects, sending enemies through walls is so much fun in Redeemer, should have that too
 
+### Regarding Player Movement with Mouse and Keyboard
+
+I am fairly sure that when playing with mouse and keyboard you would want to use your mouse for the target area. Using attack direction = move direction is just super ass. Dominik was the one who proposed it, but I think he will agree that it feels kinda shit (and just way too inaccurate) once he plays it that way.
+
 ## Game References
 
 - Redeemer
@@ -35,6 +39,15 @@ Also allows for easily copy/pasting configs.
     - Animation statemachine
 - Wizards of Legends
     - Animations
+- Akane
+    - Not a great gameplay reference, though I think the enemies have really small anticipation, how does that work?
+
+## Art References
+
+- Akane
+    - General vibe
+- `https://guttykreum.itch.io/dark-tokyo-game-assets`
+    - For the tileset, something like this should work, I also realized we don't really need 2x2 tileset mapping, it's modern so there are clear cuts pretty much everywhere
 
 ## Expenses
 
