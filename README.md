@@ -4,6 +4,15 @@ Everything regarding the game Rantoni that doesn't directly have to do with the 
 
 ## Gameplay
 
+### AI
+
+#### Pathfinding
+
+- `https://www.radicalfishgames.com/?p=186`
+- `https://www.radicalfishgames.com/?p=498`
+- `https://github.com/bevyengine/bevy/discussions/558`
+- `https://www.youtube.com/watch?v=J7mFjlyScHA`
+
 ### Attacks
 
 Bro, hear me out. Holding down light/heavy attack will trigger a "charged version", for the light attack it will be a continous stream of strikes that start slow and get faster and faster (like a gatling gun), the player is moving forward while doing this, similar to the one attack from wizards of legends with the ice melee attack. The heavy attack charges until a max is hit, when the player releases the character first stomps on the ground real hard, sending all his enemies around him to get fling into the air (though no knockback, just up), then the player jumps up and performs a sick ass all round house heel kick, sending all the enemies into oblivion.
@@ -41,6 +50,11 @@ I am fairly sure that when playing with mouse and keyboard you would want to use
     - Animations
 - Akane
     - Not a great gameplay reference, though I think the enemies have really small anticipation, how does that work?
+- CrossCode
+    - Leveldesign
+- Katana Zero
+    - Absolutely amazing tutorial
+    - Also game juice
 
 ## Art References
 
@@ -48,6 +62,13 @@ I am fairly sure that when playing with mouse and keyboard you would want to use
     - General vibe
 - `https://guttykreum.itch.io/dark-tokyo-game-assets`
     - For the tileset, something like this should work, I also realized we don't really need 2x2 tileset mapping, it's modern so there are clear cuts pretty much everywhere
+- Katana Zero
+    - General vibe
+
+## Logic References
+
+- CrossCode
+    - `https://www.radicalfishgames.com/?p=498`
 
 ## Expenses
 
@@ -61,6 +82,12 @@ I am fairly sure that when playing with mouse and keyboard you would want to use
 
 ## Marketing
 
+### Talks
+
+- `https://www.youtube.com/watch?v=UJiv14uPOac`
+- `https://www.youtube.com/watch?v=EMGTcgsEN68`
+- `https://www.youtube.com/watch?v=ht6xx9en-ZU&t=21s`
+
 ### Specific unique marketing
 
 - Reach out to Ranton, tell him about the game and also ask if he wants to be part, as for example a story writer (also partially marketing in terms of videos or similar content creation)
@@ -68,6 +95,8 @@ I am fairly sure that when playing with mouse and keyboard you would want to use
 - Events or leaderboard stuff on discord or some similar form of competition (probably not because it's too much work)
 
 ### General Stuff
+
+- Localize steam page!
 
 Just some rough plans for what you can do for marketing. Will probably not be able to do everything.
 
@@ -94,3 +123,9 @@ Now regarding the actualy story, I was thinking something pretty similar to Rede
 
 Some gameplay ideas that could influence:
     - If we end up including policeman and civilians then at the very end with the final dude let him incoorporate the stats of the player, something like `Final Badguy: "I have read the reports you know... 276. Fucking 276 civilians! You are not any better than us. No, no you are even worse! You are a monster!`, or something along those lines. I think that could be a pretty cool reflection on the players choices throughout the game and maybe also hit them with a curve ball because they probably didn't think much of killing civilians in a game like this.
+
+## Legal
+
+### Localization
+
+So there this happened to Jonas `https://youtu.be/MaFpf3nmHmo?t=798`, I personally think that if you had a github repo with a clear license like MIT that said clearly that anybody that would contribute will have their work licensed under MIT would make this essentially a non problem? Though I guess it would be better to ask a lawyer for that? But if this were a problem then wouldn't all of open source be at risk?
