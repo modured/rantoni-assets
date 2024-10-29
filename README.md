@@ -4,7 +4,14 @@ Everything regarding the game Rantoni that doesn't directly have to do with the 
 
 ## Gameplay
 
+### Statemachine
+
+- `https://www.gamedev.net/forums/topic/639005-how-to-handle-states-in-a-fighting-game/`
+- `https://www.gamedev.net/forums/topic/637975-what-makes-a-good-beatem-up-game/`
+
 ### AI
+
+- `https://www.gameaipro.com/GameAIPro/GameAIPro_Chapter01_What_is_Game_AI.pdf`
 
 #### Pathfinding
 
@@ -32,6 +39,7 @@ Also allows for easily copy/pasting configs.
 ### Juice
 
 - Destructable objects, sending enemies through walls is so much fun in Redeemer, should have that too
+- Experiment with camera responding to player (like dropkicking an enemy, should the camera move in a specific way?)
 
 ### Regarding Player Movement with Mouse and Keyboard
 
@@ -64,6 +72,24 @@ I am fairly sure that when playing with mouse and keyboard you would want to use
     - For the tileset, something like this should work, I also realized we don't really need 2x2 tileset mapping, it's modern so there are clear cuts pretty much everywhere
 - Katana Zero
     - General vibe
+- Dead Cells
+    - `https://www.gamedeveloper.com/production/art-design-deep-dive-using-a-3d-pipeline-for-2d-animation-in-i-dead-cells-i-`
+    - `https://www.youtube.com/watch?v=iNDRre6q98g`
+    - `https://stackoverflow.com/questions/70362019/how-to-vectorize-an-image-using-python`
+
+### Animation References
+
+- Slide attacking feels a little weird, this looks kinda better, maybe send enemies flying a little instant of just instantly putting them on the ground? OHH! Maybe this would also make the colliders easi- yeah no, but it might make things better, maybe
+    - `https://youtu.be/GbzdbDri3P8?t=32`
+    - `https://youtu.be/GbzdbDri3P8?t=103`
+- Oh! Maybe you could also use the same sliding for the drop kick, sending them flying and then they are grounded!
+    - `https://youtu.be/rLvbwNAFGRQ?t=4738`
+- Possible Jump animation and dropkick animation reference
+    - `https://youtu.be/rLvbwNAFGRQ?t=4798`
+
+### Blender Stuff
+
+- `https://www.youtube.com/watch?v=AQcovwUHMf0`
 
 ## Logic References
 
