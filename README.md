@@ -152,7 +152,13 @@ I am fairly sure that when playing with mouse and keyboard you would want to use
 - Reach out to Ranton, tell him about the game and also ask if he wants to be part, as for example a story writer (also partially marketing in terms of videos or similar content creation)
 - Regardless of whether or not Ranton will actually agree to join, we can definitely do some posts on his subreddit as the game was inspired by him
 - Events or leaderboard stuff on discord or some similar form of competition (probably not because it's too much work)
-- Lost Oppai game dev log with a reveal of the game at the end (though only once the steam page is up!)
+- Lost Oppai Game Dev with Rantoni mention at the end (probably kinda cheeky, but oh well)
+    - In this case doing a little bit of marketing for Lost Oppai may actually end up helping this game as well, though probably only way too indirectly and not really worth the extra effort? Well you could at least post it on yarnspinner discord
+    - Lost Oppai game dev log with a reveal of the game at the end (though only once the steam page is up!)
+- Bevy Community
+    - Share on main bevy discord server (in showcase channel for example, if you do gamedev logs then post there as well)
+    - Possibly post on some more niche bevy servers like specific crates?
+    - Put game on assets page
 
 ### General Stuff
 
@@ -168,18 +174,17 @@ Just some rough plans for what you can do for marketing. Will probably not be ab
 - Send out steam keys to streamers/youtubers and ask them to play the game
 - Reach out to press/blogs etc
 - Youtube Videos (game dev logs) about the game
-- Bevy Community
-    - Share on main bevy discord server (in showcase channel for example)
-    - Possibly post on some more niche bevy servers like specific crates?
-    - Put game on assets page
-- Lost Oppai Game Dev with Rantoni mention at the end (probably kinda cheeky, but oh well)
-    - In this case doing a little bit of marketing for Lost Oppai may actually end up helping this game as well, though probably only way too indirectly and not really worth the extra effort? Well you could at least post it on yarnspinner discord
 
 ## Level Design
 
 ### Biomes and Areas
 
+Take a look at Midnight Fight Express if you are running low on ideas, they also got high rises which might provide some good reference.
+
 - Sidestreets of Tokyo
+    - This may be too difficult to do in a general way, perhaps reduce this to very specific situations, like for instance, you could just have a straight path (either horizontal or vertical), that would be very easy (lol, relatively) to make
+    - Instead you could have something like 
+- Interiors?
 - City high rises (office buildings and rooms, playing both in the interior as well as on the roofs etc, looking down on the city)
 - Severs?
 - Winter region? (Hokkaido maybe? Something with snow would look cool)
@@ -187,6 +192,21 @@ Just some rough plans for what you can do for marketing. Will probably not be ab
 - Some temple in the mountains (I am picturing some kind of late summer/autumn setting, colorful trees and beatiful nature)
 
 - Shibuya?
+
+Possible locations for gang hideouts:
+
+- Abandoned Factory
+- Warehouse by the Docks
+- Rooftops of High-rise Buildings
+- Old Parking Garage
+- Rail Yard
+- Construction Site
+- Underground Parking Lots
+- Forest or Park Hideouts
+- Old, Closed Movie Theater
+- Closed Subway Station
+- Storage Unit Complex
+- Deserted Hotel
 
 ## Story
 
@@ -196,6 +216,9 @@ Now regarding the actualy story, I was thinking something pretty similar to Rede
 
 Some gameplay ideas that could influence:
     - If we end up including policeman and civilians then at the very end with the final dude let him incoorporate the stats of the player, something like `Final Badguy: "I have read the reports you know... 276. Fucking 276 civilians! You are not any better than us. No, no you are even worse! You are a monster!`, or something along those lines. I think that could be a pretty cool reflection on the players choices throughout the game and maybe also hit them with a curve ball because they probably didn't think much of killing civilians in a game like this.
+    - If there is something like a _Game+_ then perhaps have slightly different dialogue in some cases? Maybe even have a different ending (like a "true ending" or something?). Something like that could easily double the playtime while only requiring a fraction of the time to create, although certianly not all players would play this mode, but it would be nice to give that to people who really enjoyed the game and want to play some more
+
+If you end up implementing multiple gangs then you could do something like some gang wanting to team up with our protagonist, they meet up, they give the proposition, they shake hands, though after a few seconds the hand of the gang member explodes (chad crushed his hand with a hand shake), then says something like "I would never ally with scum like you.", further solidifying his disgust and hatred for gangs.
 
 ### How to Implement Story
 
@@ -203,10 +226,25 @@ Some gameplay ideas that could influence:
 - Less is more, this game is about gameplay/mechanics first, everything else is second, story is just a little driving force, if the mechanics are ass then the story is not supposed to save it, the story must not overshadow gameplay
 - Keep story segments short, probably less than one minute, towards the end longer segments are toleratable
 - Do not, **EVER** start the game with a cutscene or stupid story shit, **EVER**, let the player _want_ to know more about the world, open with gameplay instantly, explain what stuff is about as you go
-- No story before 15min, I feel like that is a decent mark, mabye even 30min
+    - Oh, I just realized this is **exactly** what Breath of the Wild does, and it's great (also Katana Zero does this a _tiny_ bit, like the first 2 minutes or so are tutorial and then story starts)
+- No story before 15min, I feel like that is a decent mark, mabye even 30min (though the game will not be that long in the first place, so yeah something in that ballpark)
+
+### Possible stories
+
+As I said, I am pretty open to anything, though for the case that I need to write the story myself, here are some potential ideas, dear future me. Also note that in any story, it will only start **after** the gameplay, regardless of what you actually choose, the player will be left to wonder why is killing these guys, only then can you start the story.
+
+- Protagonist is a former elitst fighter (monk/martial artist? something), but now lives a life secluded from any kind of civilization, only with his wife and daughter (or son? his family.). However, one day some kind of messanger arrives, to tell him that the world is in danger (or maybe not the world, maybe just his temple or something of his past, I really, *really* don't like these grandious stories where the hero has to save the entire world, keep it grounded man), so he has to set out to erradicate this danger for the sake of his families protection. You would leave your family in the protection of some old friend you trust, or something like that. What exactly happens here is kinda open, a betrayal? Probably too obvious, but some kind of interesting twist would be good.
+- Protagonist is a former elitst fighter (monk/martial artist? something), but now lives a life secluded from any kind of civilization with his family, or well, used to live, they got all killed (or perhaps some got kidnapped?) so you set out to kill them all in act of vengance (or rescue the ones that were kidnappes?). I am not a huge fan of this, super flat story, also the villains are just super boring, story very similar to that of Redeemer.
 
 ## Legal
 
 ### Localization
 
 So there this happened to Jonas `https://youtu.be/MaFpf3nmHmo?t=798`, I personally think that if you had a github repo with a clear license like MIT that said clearly that anybody that would contribute will have their work licensed under MIT would make this essentially a non problem? Though I guess it would be better to ask a lawyer for that? But if this were a problem then wouldn't all of open source be at risk?
+
+## MISC
+
+### Feedback for Concept Art
+
+- Views didn't match, preferably make both T-pose, meaning have legs parallel
+- Feet and hands would be nice (especially feet + shoes), separate close up shot of them
