@@ -4,15 +4,70 @@ from os.path import isdir
 
 import bpy
 
+# Camera settings
 Z_HEIGHT = 9.5
 X_DISTANCE = 10
 X_ANGLE = 0.95
 SQRT_2 = sqrt(2)
 
+# Names for objects in Blender.
+# It is required to name them this way, they are also the default name.
 CAMERA_STRING_NAME = "Camera"
 CHARACTER_RIG_NAME = "rig"
+
+RENDER_RESOLUTION_X = 100
+RENDER_RESOLUTION_Y = 100
+COLOR_PALETTE_FILE = "./palette.png"
+MATERIAL_NAME = "character"
+
+# Output files
 RENDER_OUTPUT_DIR = "render"
 METADATA_OUTPUT_DIR = "metadata.csv"
+
+bpy.context.scene.render.resolution_x = RENDER_RESOLUTION_X
+bpy.context.scene.render.resolution_y = RENDER_RESOLUTION_Y
+
+# Make sure the output has no anit-aliasing (make it pixel perfect)
+bpy.context.scene.render.film_transparent = True
+bpy.context.scene.render.filter_size = 0.0001
+
+
+def create_and_assign_material():
+    if MATERIAL_NAME in bpy.data.materials:
+        return
+
+    # Create a new material
+    material = bpy.data.materials.new(name=MATERIAL_NAME)
+    # Enable nodes to use shaders
+    material.use_nodes = True
+
+    # Access the material's node tree
+    nodes = material.node_tree.nodes
+    links = material.node_tree.links
+    nodes.clear()
+
+    # Create and add the necessary
+    output_node = nodes.new(type='ShaderNodeOutputMaterial')
+    image_texture_node = nodes.new(type='ShaderNodeTexImage')
+
+    image_texture_node.image = bpy.data.images.load(COLOR_PALETTE_FILE)
+    image_texture_node.interpolation = 'Closest'
+
+    links.new(image_texture_node.outputs['Color'], output_node.inputs['Surface'])
+
+    for obj in bpy.context.scene.objects:
+        if obj.type != "MESH":
+            continue
+
+        # Replace the first material slot
+        if obj.data.materials:
+            obj.data.materials[0] = material
+        # Add material to the object (materials list is empty)
+        else:
+            obj.data.materials.append(material)
+
+
+create_and_assign_material()
 
 
 print("\n\n---> Attempting to remove render output dir...")
