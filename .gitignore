@@ -1,9 +1,5 @@
-*.blend1*
-*.mp4
-*.mkv
-*.webm
-*.jpg
-render/*
 metadata.csv
+render/*
+reference/*
 **/*/target
 **/*/out
