@@ -186,12 +186,17 @@ Take a look at Midnight Fight Express if you are running low on ideas, they also
     - Instead you could have something like 
 - Interiors?
 - City high rises (office buildings and rooms, playing both in the interior as well as on the roofs etc, looking down on the city)
-- Severs?
+- Sewers?
 - Winter region? (Hokkaido maybe? Something with snow would look cool)
 - Volcano? (Mr. Fuji? Would be sick, also great visuals)
 - Some temple in the mountains (I am picturing some kind of late summer/autumn setting, colorful trees and beatiful nature)
 
 - Shibuya?
+
+- interior of a train (shinkansen, high speed blurry background, flickering lights) [also compatible with Hokkaido]
+- rooftop of a train (shinkansen, Tokyo in the background), kick/punch enemies off the train
+- real life replicas of some interesting areas in Tokyo?
+- enemy gang's dojo (fighting younglings)
 
 Possible locations for gang hideouts:
 
